@@ -9,7 +9,6 @@ describe 'navigate' do
     visit "/posts/#{@post.id}"
     expect(page).to have_css("h1", text: "My Post")
   end
-=end
 
   it 'to post pages' do
     visit "/posts/#{@post.id}"
@@ -37,6 +36,8 @@ describe 'form' do
     expect(page).to have_content("My Edit")
   end
 end
+
+=end
 
 describe "post" do
   it "has a post_status field" do
